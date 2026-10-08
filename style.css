@@ -1,0 +1,410 @@
+/* ========================================
+   1. إعدادات عامة
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    color: #3e2b1f;
+
+    min-height: 100vh;
+
+    padding: 30px 15px;
+
+    /* لون الخشب الأساسي */
+    background-color: #b8895b;
+
+    /* ملمس خشبي خفيف */
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            rgba(70, 40, 20, 0.08) 0px,
+            rgba(70, 40, 20, 0.08) 2px,
+            transparent 2px,
+            transparent 9px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(255, 235, 200, 0.05) 0px,
+            rgba(255, 235, 200, 0.05) 3px,
+            transparent 3px,
+            transparent 18px
+        ),
+        linear-gradient(
+            90deg,
+            #9f7048,
+            #c09668,
+            #a8794e,
+            #c39a6d,
+            #a8794e
+        );
+}
+
+
+/* ========================================
+   2. التطبيق
+======================================== */
+
+.app {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   3. بطاقة التاريخ
+======================================== */
+
+.date-card {
+    background-color: #f4e5cd;
+
+    border: 2px solid #a9784f;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 5px 12px rgba(70, 45, 25, 0.2);
+}
+
+.day-name {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #6b4328;
+}
+
+.day-number {
+    font-size: 55px;
+
+    font-weight: bold;
+
+    margin: 5px 0;
+
+    color: #4b2f1e;
+}
+
+.month {
+    font-size: 18px;
+
+    color: #795334;
+}
+
+
+/* ========================================
+   4. بطاقة التقدم
+======================================== */
+
+.progress-card {
+    background-color: #f4e5cd;
+
+    border: 2px solid #a9784f;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 12px rgba(70, 45, 25, 0.2);
+}
+
+.progress-card h2 {
+    margin-bottom: 15px;
+
+    color: #4b2f1e;
+}
+
+
+/* ========================================
+   5. شريط التقدم
+======================================== */
+
+.progress-bar {
+    width: 40%;
+
+    height: 18px;
+
+    background-color: #4e4f4e;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin: 15px auto;
+}
+
+.progress-fill {
+    width: 0%;
+
+    height: 100%;
+
+    background-color: #5c8a45;
+
+    border-radius: 10px;
+
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    margin-top: 8px;
+
+    color: #60432d;
+}
+
+
+/* ========================================
+   6. إضافة مهمة
+======================================== */
+
+.add-task {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.add-task input {
+    flex: 1;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    border: 2px solid #a9784f;
+
+    background-color: #fff8ec;
+
+    color: #3e2b1f;
+
+    font-size: 16px;
+}
+
+.add-task input::placeholder {
+    color: #98785c;
+}
+
+.add-task input:focus {
+    outline: none;
+
+    border-color: #795334;
+
+    box-shadow: 0 0 5px rgba(121, 83, 52, 0.3);
+}
+
+.add-task button {
+    width: 45px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 22px;
+
+    background-color: #795334;
+
+    color: white;
+
+    transition: 0.2s;
+}
+
+.add-task button:hover {
+    background-color: #5f3f28;
+
+    transform: scale(1.05);
+}
+
+
+/* ========================================
+   7. قسم المهام
+======================================== */
+
+.tasks-section {
+    background-color: #f4e5cd;
+
+    border: 2px solid #a9784f;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    box-shadow: 0 5px 12px rgba(70, 45, 25, 0.2);
+}
+
+.tasks-section h2 {
+    margin-bottom: 20px;
+
+    color: #4b2f1e;
+}
+
+
+/* ========================================
+   8. المهمة
+======================================== */
+
+.task {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 12px;
+
+    border: 1px solid #c4a47f;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    background-color: #fff8ec;
+
+    transition: 0.2s;
+}
+
+.task:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 3px 8px rgba(70, 45, 25, 0.15);
+}
+
+.task p {
+    font-size: 16px;
+
+    color: #4b2f1e;
+
+    word-break: break-word;
+}
+
+
+/* ========================================
+   9. أزرار المهمة
+======================================== */
+
+.task-actions {
+    display: flex;
+
+    gap: 6px;
+}
+
+.task-actions button {
+    width: 35px;
+
+    height: 35px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+
+/* زر إكمال */
+
+.complete-task {
+    background-color: #5c8a45;
+
+    color: white;
+}
+
+
+/* زر التعديل */
+
+.edit-task {
+    background-color: #c7a477;
+
+    color: #3e2b1f;
+}
+
+
+/* زر الحذف */
+
+.delete-task {
+    background-color: #a94a3a;
+
+    color: white;
+}
+
+
+/* ========================================
+   10. تأثير الأزرار
+======================================== */
+
+.task-actions button:hover {
+    transform: scale(1.08);
+}
+
+
+/* ========================================
+   11. المهمة المكتملة
+======================================== */
+
+.task.completed {
+    background-color: #e8dcc9;
+
+    opacity: 0.8;
+}
+
+.task.completed p {
+    text-decoration: line-through;
+
+    opacity: 0.5;
+}
+
+
+/* ========================================
+   12. الهاتف
+======================================== */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .date-card,
+    .progress-card,
+    .tasks-section {
+        padding: 20px;
+    }
+
+    .day-number {
+        font-size: 45px;
+    }
+
+    .progress-bar {
+        width: 60%;
+    }
+
+    .task {
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .task-actions {
+        flex-shrink: 0;
+    }
+}

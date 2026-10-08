@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build your Day</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<main class="app">
+    <section class="date-card">
+        <p class="day-name">Dimanche</p>
+         <p class="day-number">27</p>
+         <p class="month">Septembre</p>
+    </section>
+
+    <section class="progress-card">
+        <h2>Progression</h2>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        <p class="progress-text">0%</p>
+        <p class="progress-text">Tâches terminées : 0</p>
+    </section>
+    
+    <section class="add-task">
+
+        <input type="text"
+        id="taskInput"
+        placeholder="Ecrivez votre tàche..."
+        >
+
+        <button id="addTask">+</button>
+
+    </section>
+
+    <section class="tasks-section">
+        <h2>mes tàches</h2>
+
+        <div class="task">
+            <p>Aprandre JavaScript</p>
+
+            <div class="task-actions">
+                <button class="complete-task">✓</button>
+                <button class="delete-task">x</button>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
