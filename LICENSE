@@ -1,21 +1,20 @@
 MIT License
 
-Copyright (c) 2026 sami
+Copyright (c) 2026 Sami
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+L’autorisation est accordée, gratuitement, à toute personne obtenant une copie de ce logiciel et de sa documentation associée, d’utiliser, copier, modifier, fusionner, publier et distribuer le logiciel, sous réserve des conditions suivantes :
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. Le nom de l’auteur original, **Sami**, doit obligatoirement être mentionné.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. Toute personne utilisant, copiant, modifiant, publiant ou redistribuant ce projet doit indiquer clairement la source originale du projet.
+
+3. Un lien vers le dépôt GitHub original doit être conservé et visible :
+https://github.com/galaxy-ship-it-sam/Build-your-Day
+
+4. Il est interdit de présenter ce projet ou une version modifiée de ce projet comme étant entièrement une création personnelle sans mentionner l’auteur original.
+
+5. Cette notice de copyright et ces conditions doivent être incluses dans toutes les copies ou parties substantielles du logiciel.
+
+6. Les modifications du logiciel sont autorisées, à condition que l’auteur original et la source du projet soient toujours clairement mentionnés.
+
+LE LOGICIEL EST FOURNI « EN L’ÉTAT », SANS GARANTIE D’AUCUNE SORTE, EXPRESSE OU IMPLICITE. EN AUCUN CAS L’AUTEUR NE POURRA ÊTRE TENU RESPONSABLE DE TOUT DOMMAGE, PERTE OU PROBLÈME RÉSULTANT DE L’UTILISATION DU LOGICIEL.
